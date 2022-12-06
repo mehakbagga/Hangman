@@ -1,0 +1,47 @@
+.container {
+    margin: 3em;
+}
+
+.letters-group {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(10, 0.5fr);
+    gap: 15px;
+    padding-left: 3em;
+}
+
+.letter {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 1em;
+    line-height: 150%
+}
+
+.letter-clicked {
+    background-color: orange;
+}
+
+.guess-container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3em;
+}
+
+.guess-letter {
+    border-bottom: 1px solid black;
+    width: 25px;
+    height: 25px;
+    margin-right: 3em;
+    padding: 1em;
+}
+
+.image-container {
+    margin-top: 3em;
+    width: 450px;
+    height: 450px;
+    background-image: url(./images/gallows.jpg);
+}
