@@ -1,30 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" type="text/css" media="screen" charset="utf-8">
-    <title>Hangman</title>
-</head>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Mehak's Hangman</title>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
-<body>
-    <div class="container">
-        <div>Please Click the letter or enter letter on keyboard</div>
-        <div class="letters-group">
+  </head>
 
+  <body>
+    <!---for alphabets-->
+    <h1 class="text-center m-4">
+      HANGMAN
+    </h1>
+    <div class="d-flex justify-content-around mt-4 main">
+    <section>
+        <div class="container col-xs-6 mt-4 mb-4"> 
+                <div class="d-flex flex-row">
+                    <div class="a border-2 alph">A</div>
+                    <div class="b border-2  alph">B</div>
+                    <div class="c border-2  alph">C</div>
+                    <div class="d border-2  alph">D</div>
+                    <div class="e alph border-2 ">E</div>
+                    <div class="f alph border-2 ">F</div>
+                    
+
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="g alph border-2 ">G</div>
+                    <div class="h alph border-2 ">H</div>
+                    <div class="i alph border-2  p-4">I</div>
+                    <div class="j alph border-2 ">J</div>
+                    <div class="k border-2  alph">K</div>
+                    <div class="l border-2  alph">L</div>
+                    
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="m border-2  alph">M</div>
+                    <div class="n border-2  alph">N</div>
+                    <div class="o alph border-2 ">O</div>
+                    <div class="p alph border-2 ">P</div>
+                    <div class="q alph border-2 ">Q</div>
+                    <div class="r alph border-2 ">R</div>
+                    
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="s alph border-2 ">S</div>
+                    <div class="t alph border-2 ">T</div>
+                    <div class="u border-2  alph">U</div>
+                    <div class="v border-2  alph">V</div>
+                    <div class="w border-2  alph">W</div>
+                    <div class="x border-2  alph">X</div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="y border-2  alph">Y</div>
+                  <div class="z alph border-2 ">Z</div>
+                </div>
+
+           
         </div>
 
-        <div class="guess-container">
-
+        <br/>
+        <div class="dashes d-flex flex-row justify-content-center mt-4 mb-4">
         </div>
+        <br/>
 
-        <div class="image-container">
-        </div>
+    </section>
+    <section class="m-4">           
+      <img id="hang" src="images/hangman.jpg" width="250" height="auto" alt="">
+    </section>
+
+    
+    </div>
+    <div class="footer status text-center m-4">
+                <h4 class="won"></h4>
+                <h4 class="lost"></h4>
+                <button class="reset">Reset</button>
     </div>
 
-</body>
-<script type="text/javascript" src="index.js"></script>
-
+  </body>
 </html>
